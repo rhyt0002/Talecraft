@@ -199,15 +199,15 @@ footer h3 {
 }
 
 @media (max-width: 768px) {
-    .book-p {
-        font-size: 0.9rem;
-    }
     .book-content{
         flex-direction: column;
     }
     .book-content a{
-        max-width: 200px;
+        max-width: 300px;
         margin: 0 auto;
+    }
+    .home-book img, .book-content img{
+        align-self: center;
     }
 
 
@@ -273,9 +273,6 @@ footer h3 {
         max-width: 200px;
         margin: 0 auto;
     }
-    .book-p {
-        font-size: 0.9rem;
-    }
     .book-content{
         flex-direction: column;
     }
@@ -303,7 +300,6 @@ footer h3 {
     }
 
     .footer p {
-        font-size: 0.9rem;
         text-align: center;
     }
 }
