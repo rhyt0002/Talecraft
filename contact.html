@@ -4,18 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talecraft</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="wrapper"></div>
-
     </header>
+
     <main>
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="contact-container">
+                <h1>Contact</h1>
+                <div class="contact">
+                    <form>
+                        <div class="form-container">
+                            <div class="form-group">
+                                <label class="information-label" for="fullname">Name:</label><br>
+                                <input type="text" id="fullname" name="fullname" required><br><br>
+                                <label class="information-label" for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <label class="information-label" for="subject">Subject:</label><br>
+                                <input type="text" id="subject" name="subject" required><br><br>
+                            </div>
+                            <div class="form-group">
+                                <label class="information-label" for="message">Message:</label><br>
+                                <textarea id="message" class="message-text" cols="50" rows="10" aria-label="Message" required></textarea><br><br>
+                                <button class="send-button" type="submit" role="button">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <h1>FAQs</h1>
+                <hr>
+                <div class="faq">
+                    <h3>Are the books available in both print and digital formats? <span>&#9660;</span></h3>
+                    <p>The books are available through Kindle Direct, therefore you have the option to choose either a printed version or an eBook.</p>
+                </div>
+                <hr>
+                <div class="faq">
+                    <h3>What is the return policy? <span>&#9660;</span></h3>
+                    <p>All return policies are handled by Amazon. Please refer to Amazon’s return policy for returning purchased books.</p>
+                </div>
+                <hr>
+                <div class="faq">
+                    <h3>What is this website about? <span>&#9660;</span></h3>
+                    <p>This website features books such as “All Cleared Up”. The books are available for purchase through Amazon.</p>
+                </div>
+                <hr>
+                <div class="faq">
+                    <h3>How can I purchase the books? <span>&#9660;</span></h3>
+                    <p>You can purchase the books by clicking on “Buy Now” on the book's page, which will direct you to Amazon.</p>
+                </div>
+                <hr>
+                <div class="faq">
+                    <h3>How can I contact you with questions or feedback? <span>&#9660;</span></h3>
+                    <p>You can reach out through the contact form or connect with me on social media for any inquiries or feedback.</p>
+                </div>
+                <hr>
+                <div class="faq">
+                    <h3>How can I stay updated on new releases? <span>&#9660;</span></h3>
+                    <p>Follow me on social media to get the latest updates on new releases.</p>
+                </div>
+            </div>
+        </div>
     </main>
-    
-    <footer>
-        <div class="wrapper"></div>
-    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
