@@ -434,17 +434,21 @@ footer h3 {
     .bio-content img{
         align-self: center;
     }
+    .author{
+        flex-direction: column-reverse;
+    }
+    .author img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .book-content{
+        flex-direction: column;
+    }
+    .book-content img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
@@ -468,22 +472,6 @@ footer h3 {
     main h1 {
         font-size: 1.5rem;
     }
-    .author{
-        flex-direction: column-reverse;
-    }
-    .author img {
-        max-width: 200px;
-        margin: 0 auto;
-    }
-    .book-content{
-        flex-direction: column;
-    }
-    .book-content img {
-        max-width: 200px;
-        margin: 0 auto;
-    }
-
-
     .button {
         width: 80%;
         max-width: none;
