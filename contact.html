@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talecraft</title>
 <link href="style.css" rel="stylesheet">
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+></script>
+<script type="text/javascript">
+(function () {
+  emailjs.init({
+    publicKey: "oGQGfFTvOywaV1vAu",
+  });
+})();
+</script>
 </head>
 <body>
     <header>
@@ -34,7 +45,7 @@
             <div class="contact-container">
                 <h1>Contact</h1>
                 <div class="contact">
-                    <form>
+                    <form id="contact-form">
                         <div class="form-container">
                             <div class="form-group">
                                 <label class="information-label" for="fullname">Name:</label><br>
@@ -47,7 +58,7 @@
                             <div class="form-group">
                                 <label class="information-label" for="message">Message:</label><br>
                                 <textarea id="message" class="message-text" cols="50" rows="10" aria-label="Message" required></textarea><br><br>
-                                <button class="send-button" type="submit" role="button">Send Message</button>
+                                <button class="send-button button" type="submit" role="button" onclick="sendEmail()">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -105,5 +116,6 @@
         </div>
       </div>
     </footer>
+    
 </body>
 </html>
