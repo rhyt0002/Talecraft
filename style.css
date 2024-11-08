@@ -38,6 +38,7 @@ header .logo {
     list-style: none;
 }
 
+
 .nav .links a {
     display: flex;
     flex-direction: row;
@@ -450,23 +451,121 @@ footer h3 {
     }
 }
 
-/* Mobile (480px and below) */
+/* Mobile (510px and below) */
 @media (max-width: 510px) {
+  
+    .nav {
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+    }
+  
+    .nav .links {
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 1rem;
+    }
+  
+    header .logo {
+      height: 35px;
+      margin: 0;
+    }
+  
+    .nav .links a {
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff; 
+    }
+  
+    /* Hamburger Icon */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  
+    .hamburger .bar {
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+  
 
     .nav {
-        flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+  
+    .logo {
+      order: 1; 
+    }
+  
+    .hamburger {
+      order: 2; 
+    }
+  
+  
+    .nav.active .links {
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
 
-    .nav .links {
-        flex-direction: column;
-        gap: 8px;
-        font-size: 1rem;
     }
+  
 
-    header .logo {
-        height: 35px;
-        margin: 0 auto;
+    .nav.active .hamburger {
+      display: none;
     }
+  
+
+    .nav.active {
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+   
+    }
+  
+
+    .nav.active .logo {
+      order: 1; 
+    }
+  
+ 
+    .nav.active .links {
+      order: 2; 
+    }
+  
+ 
+    .nav.active .close-arrow {
+      display: block;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 30px; 
+      color: #ffffff; 
+      order: 3;
+    }
+  
+
+    .close-arrow {
+      display: none;
+    }
+  }
+  
+
+@media (min-width: 511px) {
+    .close-arrow {
+      display: none !important;
+    }
+  }
+  
 
     /* Main Content */
     main h1 {
@@ -492,4 +591,4 @@ footer h3 {
     .footer p {
         text-align: center;
     }
-}
+
