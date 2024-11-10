@@ -17,8 +17,7 @@ function sendEmail() {
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     }
-// need to change service Id
-    emailjs.send("service_x5d40gc", "Rhea-contact-forum", contactrhea).then(
+    emailjs.send("service_oyr6qws", "Rhea-contact-forum", contactrhea).then(
         alert('Message sent successfully!'))
         .catch(function(error) {
             alert('Failed to send message. Please try again later.');
