@@ -7,6 +7,9 @@ body {
     color: #51291A;
     background-color: #ffffff;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Wrapper */
@@ -56,6 +59,7 @@ header .logo {
 /* Main Content */
 main{
     margin-bottom: 2rem;
+    flex: 1;
 }
 main h1 {
     font-size: 2rem;
@@ -287,6 +291,7 @@ main p {
 
 }
 
+
 .book-content {
     display: flex;
 }
@@ -361,7 +366,7 @@ footer h3 {
 
 /* css for books */
 
-.paragon-books {
+.ks {
     margin-top: 3.5rem;
 }
 
@@ -407,6 +412,7 @@ footer h3 {
         align-self: center;
     }
 
+    
 
     .button {
         width: 80%;
@@ -591,4 +597,3 @@ footer h3 {
     .footer p {
         text-align: center;
     }
-
