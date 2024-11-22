@@ -290,7 +290,9 @@ main p {
     margin: 20px 0;
 
 }
-
+.paragon-height {
+    min-height: 60vh;
+}
 
 .book-content {
     display: flex;
