@@ -59,16 +59,13 @@ header .logo {
 /* Main Content */
 main{
     margin-bottom: 2rem;
-    flex: 1;
+    flex-grow: 1;
 }
 main h1 {
     font-size: 2rem;
     color: #51291A;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-.paragon-height {
-    min-height: 60vh;
 }
 
 main p {
