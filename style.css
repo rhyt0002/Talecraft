@@ -475,9 +475,13 @@ footer h3 {
     }
   
     header .logo {
-      height: 35px;
+      height: 45px;
       margin: 0;
     }
+    header .logo-up {
+        height: 25px;
+        margin: 0;
+      }
   
     .nav .links a {
       padding: 10px 20px;
