@@ -224,54 +224,7 @@ main p {
     color: #51291A;
 }
 
-@media (min-width: 768px) {
-    .wrapper {
-        max-width: 100%;
-        padding: 0 2rem;
-    }
 
-    .contact-container {
-        box-sizing: border-box;
-        width: 100%;
-        color: #51291A;
-    }
-
-    .contact-container,
-    .faq-container {
-        max-width: 1200px;
-        padding: 20px;
-        width: 100%;
-        min-height: 500px;
-        color: #51291A;
-    }
-
-    .contact-container,
-    .faq-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
-        color: #51291A;
-    }
-
-    .contact form .form-container {
-        flex-direction: row;
-        align-items: flex-start;
-        color: #51291A;
-    }
-
-    .contact form .form-group {
-        margin-right: 75px;
-        color: #51291A;
-    }
-
-    .contact form .form-group:last-child {
-        margin-right: 0;
-        color: #51291A;
-    }
-}
 .author {
     display: flex;
     align-items: center;
@@ -398,6 +351,54 @@ footer h3 {
 .book-description li {
     margin: 8px 0;
     padding-left: 20px;
+}
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-container {
+        box-sizing: border-box;
+        width: 100%;
+        color: #51291A;
+    }
+
+    .contact-container,
+    .faq-container {
+        max-width: 1200px;
+        padding: 20px;
+        width: 100%;
+        min-height: 500px;
+        color: #51291A;
+    }
+
+    .contact-container,
+    .faq-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: #51291A;
+    }
+
+    .contact form .form-container {
+        flex-direction: row;
+        align-items: flex-start;
+        color: #51291A;
+    }
+
+    .contact form .form-group {
+        margin-right: 75px;
+        color: #51291A;
+    }
+
+    .contact form .form-group:last-child {
+        margin-right: 0;
+        color: #51291A;
+    }
 }
 
 @media (max-width: 768px) {
@@ -578,10 +579,11 @@ footer h3 {
         font-size: 1.5rem;
     }
     .button {
-        width: 80%;
+        width: 30%;
         max-width: none;
         font-size: 1rem;
         padding: 8px 15px;
+        
     }
     
     
